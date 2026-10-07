@@ -1,0 +1,28 @@
+# Which Java mod each project in Horizon's registry ports.
+#
+# The registry's index.json has no field for this, so the map lives here and
+# is kept up to date by pull request. One row per Java mod:
+#
+#   java     the Java mod's id, as in fabric.mod.json or mods.toml (lowercase, "-" as "_")
+#   horizon  the project's id in https://horizon-rust.github.io/horizon-mods/index.json
+#   by       optional: who made the Horizon version, as the registry lists them
+#
+# A row does nothing until its project is in the index and not revoked. Hopper
+# never installs anything the index doesn't list.
+
+[[port]]
+java = "veinminer"     # example
+horizon = "veinminer"
+
+[[port]]
+java = "waystones"     # example
+horizon = "waystones"
+
+[[port]]
+java = "appleskin"     # example
+horizon = "appleskin"
+
+[[port]]
+java = "coordinates_hud"   # example: the two ids don't have to match
+horizon = "coords_hud"
+by = "Horizon"
