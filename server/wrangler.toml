@@ -1,0 +1,22 @@
+# Hopper's vote board: one Worker and one D1 database, both on the free plan.
+#
+#   npx wrangler d1 create hopper-votes          # put the id it prints below
+#   npx wrangler d1 execute hopper-votes --remote --file schema.sql
+#   npx wrangler secret put SALT                 # any long random string
+#   npx wrangler deploy
+
+name = "hopper-votes"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+USER_AGENT = "UpperSupervisor/hopper-votes/1.3.5 (https://github.com/UpperSupervisor/horizon-modpack-compatibility)"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "hopper-votes"
+database_id = "00000000-0000-0000-0000-000000000000"   # yours, from `wrangler d1 create`
+
+# Every night: forget rate-limit counters older than a day.
+[triggers]
+crons = ["17 4 * * *"]
