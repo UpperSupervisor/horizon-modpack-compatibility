@@ -1,0 +1,8 @@
+# The GitHub "About" box. The Settings app (github.com/apps/settings) applies this
+# on every push; without it, copy the description and topics in by hand.
+# Upload .github/social-preview.png in Settings -> General -> Social preview.
+repository:
+  name: horizon-modpack-compatibility
+  description: "Drop your mods folder, a Prism or MultiMC instance or an .mrpack on Hopper and it answers what Horizon already does, what has a port and what is not there yet, then installs the rest."
+  topics: minecraft-mods, horizon, modpack, modpack-checker, prism-launcher, multimc, mrpack, modrinth, rust
+  has_wiki: false
