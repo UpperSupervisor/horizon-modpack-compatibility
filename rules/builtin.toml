@@ -1,0 +1,106 @@
+# Java mods that Horizon already does on its own.
+#
+# Hopper checks this table first. Every row is reviewed by hand and links the
+# Horizon page that backs it. Change it with a pull request that quotes the doc.
+#
+#   mods    Java mod ids, as in fabric.mod.json or mods.toml (lowercase, "-" as "_")
+#   words   optional: words in a mod's name that mark a whole family of mods
+#   horizon what Horizon calls its own version
+#   kind    engine (nothing to turn on), setting (off by default, one switch)
+#           or official-mod (installs from the launcher's Mods page)
+#   how     one plain sentence, shown under "How to turn it on"
+#   source  the Horizon doc that says so
+
+[[builtin]]
+mods = ["sodium", "lithium", "ferritecore", "modernfix", "immediatelyfast"]
+horizon = "Horizon's engine"
+kind = "engine"
+how = "Nothing to turn on. Horizon is already this fast."
+source = "https://github.com/horizon-rust/horizon/blob/main/docs/modpacks.md"
+
+[[builtin]]
+mods = ["distanthorizons"]
+horizon = "LOD Distance"
+kind = "setting"
+how = "Open Options, then Horizon Settings, then Graphics, and raise LOD Distance. It goes up to 1024 chunks."
+source = "https://github.com/horizon-rust/horizon#what-works-today"
+
+[[builtin]]
+mods = ["xaerominimap", "xaerominimapfair", "journeymap"]
+horizon = "Minimap"
+kind = "official-mod"
+how = "Open the Horizon launcher, go to Mods and install Minimap."
+source = "https://github.com/horizon-rust/horizon/blob/main/docs/mods.md#horizons-official-mods"
+
+[[builtin]]
+mods = ["zoomify", "ok_zoomer"]
+horizon = "Zoom"
+kind = "official-mod"
+how = "Open the Horizon launcher, go to Mods and install Zoom."
+source = "https://github.com/horizon-rust/horizon/blob/main/docs/mods.md#horizons-official-mods"
+
+[[builtin]]
+mods = ["jei", "roughlyenoughitems", "emi"]
+horizon = "Recipes"
+kind = "official-mod"
+how = "Open the Horizon launcher, go to Mods and install Recipes. It adds the item panel and recipe pages."
+source = "https://github.com/horizon-rust/horizon/blob/main/docs/mods.md#horizons-official-mods"
+
+[[builtin]]
+mods = ["mousetweaks"]
+horizon = "Mouse Tweaks controls"
+kind = "setting"
+how = "Open Options, then Horizon Settings, then Extras, and turn on Mouse Tweaks controls."
+source = "https://github.com/horizon-rust/horizon/blob/main/docs/extras.md"
+
+[[builtin]]
+mods = ["inventoryprofilesnext", "inventorysorter"]
+horizon = "Sorting"
+kind = "setting"
+how = "Open Options, then Horizon Settings, then Extras, and turn on Sorting."
+source = "https://github.com/horizon-rust/horizon/blob/main/docs/extras.md"
+
+[[builtin]]
+mods = ["lambdynlights"]
+horizon = "Dynamic lights"
+kind = "setting"
+how = "Open Options, then Horizon Settings, then Extras, and turn on Dynamic lights."
+source = "https://github.com/horizon-rust/horizon/blob/main/docs/extras.md"
+
+[[builtin]]
+mods = ["controlify", "midnightcontrols"]
+horizon = "Controllers"
+kind = "setting"
+how = "Plug in a controller and play. Its settings are in Options, then Horizon Settings, then Controller."
+source = "https://github.com/horizon-rust/horizon#what-works-today"
+
+[[builtin]]
+mods = ["autoreconnect"]
+horizon = "Auto-reconnect"
+kind = "setting"
+how = "Open Options, then Horizon Settings, then Extras, and turn on Auto-reconnect."
+source = "https://github.com/horizon-rust/horizon/blob/main/docs/extras.md"
+
+[[builtin]]
+mods = ["gammautils"]
+words = ["fullbright"]
+horizon = "Fullbright"
+kind = "setting"
+how = "Open Options, then Horizon Settings, then Extras, and turn on Fullbright."
+source = "https://github.com/horizon-rust/horizon/blob/main/docs/extras.md"
+
+[[builtin]]
+mods = []
+words = ["fps display", "fps counter", "fps hud"]
+horizon = "FPS Counter"
+kind = "official-mod"
+how = "Open the Horizon launcher, go to Mods and install FPS Counter."
+source = "https://github.com/horizon-rust/horizon/blob/main/docs/mods.md#horizons-official-mods"
+
+[[builtin]]
+mods = []
+words = ["keystrokes"]
+horizon = "Keystrokes"
+kind = "official-mod"
+how = "Open the Horizon launcher, go to Mods and install Keystrokes."
+source = "https://github.com/horizon-rust/horizon/blob/main/docs/mods.md#horizons-official-mods"
